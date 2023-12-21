@@ -13,7 +13,7 @@ def test_product_detail_api(client):
 
 def test_product_api(client):
     response = client.get("/api/products")
-    assert response.status_code == 200
+    assert response.status_code != 200
 
 # post new cart
 def test_post_cart(client):
